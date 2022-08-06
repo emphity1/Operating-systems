@@ -63,9 +63,6 @@ void invert(int numero_thread){
  
 
 
-
-
-
 int main(int argc, char const *argv[]) 
 
 { 
