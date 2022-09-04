@@ -19,7 +19,6 @@ int file_length = 0;
 char buffer_finale[MAX];
 int nt = 0;
 int count = 0;
-
 pthread_mutex_t mutex;
 
 void *worker(void *param){
@@ -77,13 +76,11 @@ void *worker(void *param){
 }
 
 int main(int argc, char *argv[]){
-
-
     nt = argc-1;
-    printf("\nHai inserito %d file\n",nt);
     int i=0;
     int fdo;
     size_t wb = 0;
+    printf("\nHai inserito %d file\n",nt);
 
    //creo thread
    int *index = malloc(nt*sizeof(pthread_t));
